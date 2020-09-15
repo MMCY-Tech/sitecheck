@@ -157,9 +157,9 @@ if __name__ == '__main__':
 
     # in CI mode, save results in S3 and also send results via SMS and Slack
     if args.ci:
-       
+        
         # send notifications only if currently failing or was failing, now passing
-        if not last or errors or (not errors and last and last['results'] != 0):
+        if errors:
             # send multiple messages if needed to get around Twilio 160 char limit
             msg = []
             if rc == 0:
