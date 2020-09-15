@@ -56,9 +56,8 @@ def check_sites(verbose=False):
         contents - expected contents in page (HTTP GET), only used when expected code=200
     '''
     servers = [
-        {'url': 'http://www.readthedocs.org/', 'code': 302, 'redirect': 'https://readthedocs.org/'},
-        {'url': 'http://readthedocs.org/', 'code': 302, 'redirect': 'https://readthedocs.org/'},
-        {'url': 'https://readthedocs.org/', 'code': 200, 'contents': 'Technical documentation lives here'},
+        {'url': 'http://www.mmcytech.com/', 'code': 302, 'redirect': 'https://www.mmcytech.com/'},
+        {'url': 'https://www.mmcytech.com/', 'code': 200, 'contents': 'Fail Welcome to MMCY Tech'},
 
         {'url': 'http://www.python.org/', 'code': 301, 'redirect': 'https://www.python.org/'},
         {'url': 'https://www.python.org/', 'code': 200, 'contents': 'official home of the Python Programming Language'},
@@ -99,9 +98,7 @@ def check_sites(verbose=False):
                                   s['contents']))
 
     ssl_hosts = [
-        'readthedocs.org',
-        'www.python.org',
-        'www.thunderbird.net',
+        'mmcytech.com'
     ]
     for s in ssl_hosts:
         if verbose:
