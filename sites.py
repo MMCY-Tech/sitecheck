@@ -157,32 +157,7 @@ if __name__ == '__main__':
 
     # in CI mode, save results in S3 and also send results via SMS and Slack
     if args.ci:
-        s3 = s3data.S3Data(
-            os.environ['AWS_ACCESS_KEY_ID'],
-            os.environ['AWS_SECRET_ACCESS_KEY'],
-            os.environ['S3DATA_BUCKET'],
-        )
-
-        s3key = 'sitecheck-example-data'
-        if args.delete:
-            s3.delete(s3key)
-
-        last = s3.get(s3key)
-        if last:
-            print("last run rc {} at {} which is {}".format(
-                last['results'],
-                last['lastRun'],
-                datetime.datetime.fromtimestamp(last['lastRun']).strftime('%Y-%m-%d %H:%M:%S'))
-            )
-
-        data = {
-            "lastRun": int(time.time()),
-            "version": 1,
-            "results": rc,
-            "errors": errors,
-        }
-        s3.put(s3key, data)
-
+       
         # send notifications only if currently failing or was failing, now passing
         if not last or errors or (not errors and last and last['results'] != 0):
             # send multiple messages if needed to get around Twilio 160 char limit
@@ -196,14 +171,7 @@ if __name__ == '__main__':
 
             if args.verbose:
                 print("CI mode")
-            send_sms_messages(
-                os.environ['TWILIO_ACCOUNT_SID'],
-                os.environ['TWILIO_AUTH_TOKEN'],
-                os.environ['TWILIO_FROM_NUMBER'],
-                os.environ['TWILIO_TO_NUMBER'],
-                msg,
-                args.verbose,
-            )
+           
             send_slack_messages(
                 os.environ['SLACK_WEBHOOK'],
                 msg,
