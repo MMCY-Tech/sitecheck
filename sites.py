@@ -59,6 +59,10 @@ def check_sites(verbose=False):
         {'url': 'http://www.mmcytech.com/', 'code': 301, 'redirect': 'https://www.mmcytech.com/'},
         {'url': 'https://www.mmcytech.com/', 'code': 200, 'contents': 'Welcome to MMCY Tech'},
 
+        {'url': 'http://mymeetingtracker.com/', 'code': 200, 'contents': 'My Meeting Tracker'},
+        {'url': 'http://app.mymeetingtracker.com/', 'code': 200, 'contents': 'My Meeting Tracker'},
+        {'url': 'http://staging.mymeetingtracker.com/', 'code': 200, 'contents': 'My Meeting Tracker'},
+        
         {'url': 'http://www.python.org/', 'code': 301, 'redirect': 'https://www.python.org/'},
         {'url': 'https://www.python.org/', 'code': 200, 'contents': 'official home of the Python Programming Language'},
 
