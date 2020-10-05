@@ -56,8 +56,8 @@ def check_sites(verbose=False):
         contents - expected contents in page (HTTP GET), only used when expected code=200
     '''
     servers = [
-        #{'url': 'http://www.mmcytech.com/', 'code': 301, 'redirect': 'https://www.mmcytech.com/'},
-        #{'url': 'https://www.mmcytech.com/', 'code': 200, 'contents': 'Welcome to MMCY Tech'},
+        {'url': 'http://www.mmcytech.com/', 'code': 301, 'redirect': 'https://www.mmcytech.com/'},
+        {'url': 'https://www.mmcytech.com/', 'code': 200, 'contents': 'Welcome to MMCY Tech'},
 
         {'url': 'http://mymeetingtracker.com/', 'code': 301, 'redirect': 'http://app.mymeetingtracker.com/'},
         {'url': 'http://app.mymeetingtracker.com/', 'code': 200, 'contents': 'My Meeting Tracker'},
