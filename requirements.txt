@@ -2,3 +2,4 @@ flake8
 requests
 -e git://github.com/bcantoni/s3data.git#egg=s3data
 twilio
+certifi
