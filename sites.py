@@ -65,12 +65,9 @@ def check_sites(verbose=False):
         {'url': 'http://app.staging.mymeetingtracker.com/', 'code': 200, 'contents': 'My Meeting Tracker'},
         {'url': 'http://staging.mymeetingtracker.com/', 'code': 301, 'redirect': 'http://app.staging.mymeetingtracker.com/'},
         
-        {'url': 'http://www.python.org/', 'code': 301, 'redirect': 'https://www.python.org/'},
-        {'url': 'https://www.python.org/', 'code': 200, 'contents': 'official home of the Python Programming Language'},
-
-        {'url': 'http://thunderbird.net/', 'code': 301, 'redirect': 'https://thunderbird.net/'},
-        {'url': 'http://www.thunderbird.net/', 'code': 301, 'redirect': 'https://www.thunderbird.net/'},
-        {'url': 'https://www.thunderbird.net/en-US/', 'code': 200, 'contents': 'Creative Commons license'},
+        {'url': 'http://api.mymeetingtracker.com/public/', 'code': 200, 'contents': 'successful'},
+        {'url': 'http://api.staging.mymeetingtracker.com/public/', 'code': 200, 'contents': 'successful'},
+        {'url': 'http://api.dev.mymeetingtracker.com/public/', 'code': 200, 'contents': 'successful'},
     ]
 
     errors = []
