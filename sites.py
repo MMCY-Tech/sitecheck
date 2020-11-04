@@ -59,6 +59,9 @@ def check_sites(verbose=False):
         {'url': 'http://www.mmcytech.com/', 'code': 301, 'redirect': 'https://www.mmcytech.com/'},
         {'url': 'https://www.mmcytech.com/', 'code': 200, 'contents': 'Welcome to MMCY Tech'},
 
+        {'url': 'http://www.moderneth.com/', 'code': 301, 'redirect': 'https://www.moderneth.com/'},
+        {'url': 'https://www.moderneth.com/', 'code': 200, 'contents': 'Home - ModernETH'},
+
         {'url': 'http://mymeetingtracker.com/', 'code': 301, 'redirect': 'https://app.mymeetingtracker.com/'},
         {'url': 'http://app.mymeetingtracker.com/', 'code': 301, 'redirect': 'https://app.mymeetingtracker.com/'},
         {'url': 'https://app.mymeetingtracker.com/', 'code': 200, 'contents': 'My Meeting Tracker'},
@@ -101,7 +104,7 @@ def check_sites(verbose=False):
                                   s['contents']))
 
     ssl_hosts = [
-        'mmcytech.com', 'app.mymeetingtracker.com'
+        'mmcytech.com', 'app.mymeetingtracker.com', 'moderneth.com'
     ]
     for s in ssl_hosts:
         if verbose:
