@@ -67,7 +67,7 @@ def check_sites(verbose=False):
         #{'url': 'https://power.moderneth.com/', 'code': 302, 'redirect': 'https://power.moderneth.com?password-protected=login&redirect_to=https%3A%2F%2Fpower.moderneth.com%2F'},
         
         {'url': 'http://www.crdle.com/', 'code': 301, 'redirect': 'https://www.crdle.com/'},
-        {'url': 'https://www.crdle.com/', 'code': 200, 'contents': 'Home - Crdle'},
+        {'url': 'https://www.crdle.com/', 'code': 200, 'contents': 'Home - CRDLE'},
 
         {'url': 'http://mymeetingtracker.com/', 'code': 301, 'redirect': 'https://app.mymeetingtracker.com/'},
         {'url': 'http://app.mymeetingtracker.com/', 'code': 301, 'redirect': 'https://app.mymeetingtracker.com/'},
