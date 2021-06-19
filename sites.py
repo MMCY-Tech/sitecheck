@@ -111,7 +111,7 @@ def check_sites(verbose=False):
                                   s['contents']))
 
     ssl_hosts = [
-        'mmcytech.com', 'app.mymeetingtracker.com', 'moderneth.com', 'power.moderneth.com'
+        'www.mmcytech.com', 'app.mymeetingtracker.com', 'moderneth.com', 'power.moderneth.com'
     ]
     for s in ssl_hosts:
         if verbose:
