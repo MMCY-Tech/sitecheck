@@ -69,14 +69,14 @@ def check_sites(verbose=False):
         {'url': 'http://www.crdle.com/', 'code': 301, 'redirect': 'https://www.crdle.com/'},
         {'url': 'https://www.crdle.com/', 'code': 200, 'contents': 'Home - CRDLE'},
 
-        {'url': 'http://mymeetingtracker.com/', 'code': 301, 'redirect': 'https://app.mymeetingtracker.com/'},
-        {'url': 'http://app.mymeetingtracker.com/', 'code': 301, 'redirect': 'https://app.mymeetingtracker.com/'},
-        {'url': 'https://app.mymeetingtracker.com/', 'code': 200, 'contents': 'My Meeting Tracker'},
-        {'url': 'http://app.staging.mymeetingtracker.com/', 'code': 200, 'contents': 'My Meeting Tracker'},
-        {'url': 'http://staging.mymeetingtracker.com/', 'code': 301, 'redirect': 'http://app.staging.mymeetingtracker.com/'},
+        #{'url': 'http://mymeetingtracker.com/', 'code': 301, 'redirect': 'https://app.mymeetingtracker.com/'},
+        #{'url': 'http://app.mymeetingtracker.com/', 'code': 301, 'redirect': 'https://app.mymeetingtracker.com/'},
+        #{'url': 'https://app.mymeetingtracker.com/', 'code': 200, 'contents': 'My Meeting Tracker'},
+        #{'url': 'http://app.staging.mymeetingtracker.com/', 'code': 200, 'contents': 'My Meeting Tracker'},
+        #{'url': 'http://staging.mymeetingtracker.com/', 'code': 301, 'redirect': 'http://app.staging.mymeetingtracker.com/'},
         
-        {'url': 'http://api.mymeetingtracker.com/public/', 'code': 200, 'contents': 'successful'},
-        {'url': 'http://api.staging.mymeetingtracker.com/public/', 'code': 200, 'contents': 'successful'},
+        #{'url': 'http://api.mymeetingtracker.com/public/', 'code': 200, 'contents': 'successful'},
+        #{'url': 'http://api.staging.mymeetingtracker.com/public/', 'code': 200, 'contents': 'successful'},
         {'url': 'http://api.dev.mymeetingtracker.com/public/', 'code': 200, 'contents': 'successful'},
     ]
 
